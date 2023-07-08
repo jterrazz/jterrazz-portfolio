@@ -1,0 +1,28 @@
+# fly.toml app configuration file generated for jterrazz-portfolio on 2023-06-11T18:49:54+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "jterrazz-portfolio"
+primary_region = "cdg"
+
+[build]
+  image = "ghost:latest"
+
+[http_service]
+  internal_port = 2368
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 1
+
+[env]  
+  url = "https://jterrazz.com"  
+  database__client = "sqlite3"  
+  database__connection__filename = "content/data/ghost.db"  
+  database__useNullAsDefault = "true"  
+  database__debug = "false"
+  
+[mounts]
+  source="data"
+  destination="/var/lib/ghost/content"

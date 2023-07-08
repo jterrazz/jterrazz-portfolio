@@ -1,0 +1,13 @@
+301:
+  # Content routers
+  /link/articles: https://medium.com/@jterrazz
+  /link/git: https://github.com/jterrazz
+  /link/hackathons: https://devpost.com/jterrazz
+  /link/photographs: https://www.pexels.com/@jterrazz/
+
+  # Social profiles
+  /link/profile-medium: https://medium.com/@jterrazz
+  /link/profile-devpost: https://devpost.com/jterrazz
+  /link/profile-pexels: https://www.pexels.com/@jterrazz/
+  /link/profile-linkedin: https://www.linkedin.com/in/jterrazz
+  /link/profile-twitter: https://twitter.com/j_terrazz
